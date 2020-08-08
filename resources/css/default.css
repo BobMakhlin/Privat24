@@ -4,4 +4,71 @@
     --green: #75af26;
 }
 
+.non-selectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.hidden-link {
+    text-decoration: none;
+}
 
+h3 {
+    font-size: 1.5rem;
+}
+
+#site-wrapper {
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.surname {
+    font-weight: bold;
+}
+
+#menu {
+    border-bottom: 1px solid var(--gray);
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+#main {
+    min-height: 75.9%;
+    padding: 2vh 0;
+}
+
+#footer {
+    border-top: 1px solid var(--gray);
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-block {
+    display: flex;
+}
+
+.logo-block__title {
+    color: var(--light-gray);
+    font-size: 1.35em;
+    margin-left: 0.45em;
+    margin-bottom: 0.01px;
+    align-self: flex-end;
+}
+
+.copyright {
+    color: var(--light-gray);
+    font-size: 1.35em;
+    font-weight: bold;
+}

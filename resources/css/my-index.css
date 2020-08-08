@@ -1,0 +1,37 @@
+
+.services {
+    display: flex;        
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service-block {
+    flex-basis: 26%;
+}
+.service-block__img {
+    object-fit: cover;
+    width: 100%;
+    display: block;
+
+    box-sizing: border-box;
+    border: 2px dashed var(--green);
+}
+.service-block__title-block {
+    text-align: center;
+    padding: 0.2em 0;
+    color: var(--gray);
+    width: 100%;
+    
+    box-sizing: border-box;
+    border: 2px dashed var(--green);
+    border-top: 0;
+
+    text-decoration: underline;
+    text-decoration-color: transparent;
+
+    transition: font-weight 0.8s, text-decoration-color 1.25s;
+}
+
+.service-block:hover .service-block__title-block {
+    font-weight: bold;
+    text-decoration-color: var(--gray);
+}
