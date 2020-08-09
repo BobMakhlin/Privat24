@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Offices</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!-- /Fonts -->
+
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="resources/css/default.css">
+    <link rel="stylesheet" href="resources/css/offices.css">
 </head>
+
 <body>
-    
+
+    <div id="site-wrapper" class="container">
+
+        <div id="menu">
+            <div class="logo-block">
+                <a href="/">
+                    <img src="resources/images/privat24-logo.svg" alt="">
+                </a>
+
+                <p class="logo-block__title">from <span class="surname">Bob Makhlin</span></p>
+            </div>
+        </div>
+
+        <div id="main">
+            <h1 class="main__title">Offices</h1>
+
+            <div class="options-block">
+
+                <div class="option">
+                    <label for="city" class="option__title">City:</label>
+                    <input type="text" id="city" class="option__input">
+                </div>
+                <div class="option">
+                    <label for="address" class="option__title">Address:</label>
+                    <input type="text" id="address" class="option__input">
+                </div>
+
+                <p class="error options-block__error"></p>
+
+                <button id="confirm-options-button" class="privat24-button">OK</button>
+            </div>
+
+            <div class="offices-line">
+                
+            </div>
+        </div>
+
+        <div id="footer">
+            <p class="copyright">&#169; Bob Makhlin, 2020</p>
+        </div>
+
+    </div>
+
+    <script src="resources/js/helpers/caching-decorator.js"></script>
+    <script src="resources/js/helpers/urls.js"></script>
+
+    <script src="resources/js/helpers/loadingHelper.js"></script>
+    <script src="resources/js/drawers/office.js"></script>
+    <script src="resources/js/offices.js"></script>
 </body>
+
 </html>

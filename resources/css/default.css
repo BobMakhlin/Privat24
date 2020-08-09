@@ -2,6 +2,9 @@
     --light-gray: #bac2cd;
     --gray: #8492a6;
     --green: #75af26;
+    --dark-green: #679922;
+    --black: #3c4858;
+    --error: #a70008;
 }
 
 .non-selectable {
@@ -24,6 +27,9 @@ h3 {
     font-family: 'Raleway', sans-serif;
     height: 100vh;
 }
+* {
+    color: var(--black);
+}
 
 .container {
     max-width: 1300px;
@@ -43,8 +49,11 @@ h3 {
 }
 
 #main {
-    min-height: 75.9%;
+    min-height: 75.8%;
     padding: 2vh 0;
+}
+.main__title {
+    font-size: 2.3em;
 }
 
 #footer {
@@ -71,4 +80,58 @@ h3 {
     color: var(--light-gray);
     font-size: 1.35em;
     font-weight: bold;
+}
+
+
+.options-block {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+.option {
+    width: 100%;
+    margin-bottom: 0.5em;
+
+    display: flex;
+    align-items: center;
+}
+
+.option__title, .option__input {
+    font-size: 1.6em;
+    color: var(--black);
+}
+.option__title {
+    width: 35%;
+}
+.option__input {
+    width: 65%;
+}
+
+.privat24-button {
+    width: 100%;
+    font-size: 1.6em;
+    padding: 1px 0;
+    margin-top: 0.1em;
+
+    background-color: var(--green);
+    border: 2px solid var(--black);
+    border-radius: 3px;
+
+    transition: background-color 1s;
+}
+.privat24-button:hover {
+    background-color: var(--dark-green);
+}
+
+
+.error {
+    color: var(--error);
+    text-align: center;
+    font-size: 1.6em;
+    margin: 0.6em 0;
+
+    display: none;
+}
+.error_active {
+    display: block;
 }
