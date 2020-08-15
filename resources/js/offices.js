@@ -1,8 +1,15 @@
+import cachingDecorator from './helpers/caching-decorator.js';
+import loadJson from './helpers/loadingHelper.js';
+import { proxyUrl, officesUrl } from './helpers/urls.js';
+import Office from './drawers/office.js';
+
+
 const cityInput = document.querySelector('#city');
 const addressInput = document.querySelector('#address');
 const confirmButton = document.querySelector('#confirm-options-button');
 const optionsError = document.querySelector('.options-block__error');
 const officesLine = document.querySelector('.offices-line');
+
 
 let cachingGetOffices = cachingDecorator(getOffices, (...args) => args.join('_'));
 
@@ -35,7 +42,7 @@ function showOffices(offices) {
             officeInfo.email, 
             officeInfo.phone
         );
-
+        
         officesLine.append(office.toHtmlElement());
     }
 }

@@ -1,5 +1,5 @@
 
-function cachingDecorator(func, hashFn) {
+export default function cachingDecorator(func, hashFn) {
     let cache = new Map();
 
     return function (...args) {

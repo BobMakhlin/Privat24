@@ -1,5 +1,5 @@
 
-class Office {
+export default class Office {
     constructor(country, city, address, email, phoneNumber) {
         this.country = country;
         this.city = city;

@@ -6,7 +6,7 @@ class HttpError extends Error {
     }
 }
 
-async function loadJson(url) {
+export default async function loadJson(url) {
     let response = await fetch(url);
 
     if (!response.ok) {
