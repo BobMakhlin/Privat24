@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATMs</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!-- /Fonts -->
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="">
+    <!-- /Leaflet -->
+
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="resources/css/default.css">
+    <link rel="stylesheet" href="resources/css/atms.css">
+</head>
+
+<body>
+
+    <div id="site-wrapper" class="container">
+
+        <div id="menu">
+            <div class="logo-block">
+                <a href="/">
+                    <img src="resources/images/privat24-logo.svg" alt="">
+                </a>
+
+                <p class="logo-block__title">from <span class="surname">Bob Makhlin</span></p>
+            </div>
+        </div>
+
+        <div id="main">
+            <h1 class="main__title">ATMs</h1>
+
+            <div class="options-block">
+
+                <div class="option">
+                    <label for="city" class="option__title">City:</label>
+                    <input type="text" id="city" class="option__input">
+                </div>
+                <div class="option">
+                    <label for="address" class="option__title">Address:</label>
+                    <input type="text" id="address" class="option__input">
+                </div>
+
+                <p class="error options-block__error"></p>
+
+                <button id="confirm-options-button" class="privat24-button">OK</button>
+            </div>
+
+            <div id="mapid"></div>
+        </div>
+
+        <div id="footer">
+            <p class="copyright">&#169; Bob Makhlin, 2020</p>
+        </div>
+
+    </div>
+
+    <!-- Lodash -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
+    <!-- /Lodash -->
+
+    <!-- Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <!-- /Leaflet -->
+
+    <script type="module" src="resources/js/atms.js"></script>
+</body>
+
+</html>
